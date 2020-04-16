@@ -36,7 +36,7 @@ public class GeneticOperators
         do
         {
             crossoverPoint = RANDOM.nextInt(8);
-        } while (crossoverPoint == 0 || crossoverPoint == 7);
+        } while (crossoverPoint == 0);
         System.out.println("Crossover will happen at point " + crossoverPoint);
 
         // initialize genes to perform the crossover

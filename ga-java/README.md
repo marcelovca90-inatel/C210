@@ -2,19 +2,19 @@
 
 This algorithm attempts to find the maximum value of a the following 2-variable function:
 
-![function](https://github.com/marcelovca90/codigos-inatel/raw/master/C210/ga-java/res/function.gif)
+![function](https://github.com/marcelovca90-inatel/C210/raw/master/ga-java/res/function.gif)
 
 3D plot:
 
-![3d_plot](https://github.com/marcelovca90/codigos-inatel/raw/master/C210/ga-java/res/3d_plot.gif)
+![3d_plot](https://github.com/marcelovca90-inatel/C210/raw/master/ga-java/res/3d_plot.gif)
 
 Contour plot:
 
-![contour_plot](https://github.com/marcelovca90/codigos-inatel/raw/master/C210/ga-java/res/contour_plot.gif)
+![contour_plot](https://github.com/marcelovca90-inatel/C210/raw/master/ga-java/res/contour_plot.gif)
 
 Code output:
 
-![fitness_plot](https://github.com/marcelovca90/codigos-inatel/raw/master/C210/ga-java/res/fitness_plot.png)
+![code_output](https://github.com/marcelovca90-inatel/C210/raw/master/ga-java/res/code_output.png)
 
 ```
 Best individual: G = [1111 1111], F = [15, 15], Score = 160,099
