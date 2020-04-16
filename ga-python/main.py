@@ -37,8 +37,8 @@ if __name__ == "__main__":
     best_chromossome = GeneticUtils.find_best_chromossome(population)
     print(f"Best individual: {GeneticUtils.format_chromossome(best_chromossome)}")
 
-    plt.gca().set_xlabel('Generations')
-    plt.gca().set_ylabel('Average Fitness')
-    plt.gca().set_title('Generations vs Average Fitness')
+    plt.gca().set_xlabel('Generation')
+    plt.gca().set_ylabel('Average f(x,y) value')
+    plt.gca().set_title('Generation vs Average f(x,y) value')
     plt.plot(generation_plot, population_score_plot)
     plt.show()
