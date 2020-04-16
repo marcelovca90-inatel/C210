@@ -26,10 +26,10 @@ public class PlotUtils
 
         // set up
         XYChart chart = QuickChart.getChart(
-            "Generations vs Average Fitness",
-            "Generations",
-            "Average Fitness",
-            "Average Fitness (Generation)",
+            "Generation vs Average f(x,y) value",
+            "Generation",
+            "Average f(x,y) value",
+            "Average f(x,y) value (Generation)",
             dataX.stream().mapToDouble(Double::doubleValue).toArray(),
             dataY.stream().mapToDouble(Double::doubleValue).toArray());
 
