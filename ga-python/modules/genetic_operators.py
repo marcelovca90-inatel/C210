@@ -24,20 +24,20 @@ class GeneticOperators:
 
     @staticmethod
     def crossover(population, parent1, parent2):
-        crossover_point = random.randint(1, 6)
+        crossover_point = random.randint(1, 9)
         print(f"Crossover will happen at point {crossover_point}")
 
         parent1_genes = parent1.get_genes()
         parent2_genes = parent2.get_genes()
 
-        child1_genes = BitSet(8)
-        child2_genes = BitSet(8)
+        child1_genes = BitSet(10)
+        child2_genes = BitSet(10)
 
         for i in range(crossover_point):
             child1_genes.set(i, parent1_genes.get(i))
             child2_genes.set(i, parent2_genes.get(i))
 
-        for i in range(crossover_point, 8):
+        for i in range(crossover_point, 10):
             child1_genes.set(i, parent2_genes.get(i))
             child2_genes.set(i, parent1_genes.get(i))
 
@@ -61,7 +61,7 @@ class GeneticOperators:
 
         target = random.choice(population)
 
-        mutation_point = random.randint(0, 7)
+        mutation_point = random.randint(0, 9)
         print(f"Individual {target.to_string()} will mutate at point {mutation_point}")
 
         genes = target.get_genes()

@@ -19,7 +19,7 @@ if __name__ == "__main__":
     population_score_plot = []
     population_score_plot.append(population_score)
 
-    while generation < 100:
+    while generation < 50:
         parent1, parent2 = GeneticOperators.selection(population)
 
         GeneticOperators.crossover(population, parent1, parent2)
