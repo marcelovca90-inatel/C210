@@ -7,8 +7,8 @@ import br.inatel.c210.ga.algorithm.GeneticOperators;
 import br.inatel.c210.ga.algorithm.GeneticUtils;
 import br.inatel.c210.ga.entity.Chromossome;
 import br.inatel.c210.ga.entity.Problem;
-import br.inatel.c210.ga.plot.GridUtils;
-import br.inatel.c210.ga.plot.PlotUtils;
+import br.inatel.c210.ga.view.GridUtils;
+import br.inatel.c210.ga.view.PlotUtils;
 
 public class Runner
 {

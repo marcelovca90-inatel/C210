@@ -1,4 +1,4 @@
-package br.inatel.c210.ga.plot;
+package br.inatel.c210.ga.view;
 
 import java.util.ArrayList;
 import java.util.List;
