@@ -24,7 +24,7 @@ public class Runner
 
         // initialize control and auxiliary variables
         int generation = 0;
-        double populationScore = Problem.f_average(population);
+        double populationScore = Problem.g_average(population);
         System.err.println(String.format("Generation # %d -> Average population score = %.3f", generation, populationScore));
         PlotUtils.add(generation, populationScore);
 
@@ -47,7 +47,7 @@ public class Runner
             generation++;
 
             // calculate new population average score
-            populationScore = Problem.f_average(population);
+            populationScore = Problem.g_average(population);
 
             // record the average score for the current generation
             PlotUtils.add(generation, populationScore);
@@ -61,7 +61,7 @@ public class Runner
         Chromossome bestChromossome = GeneticUtils.findBestChromossome(population);
         System.out.println("Best individual: " + GeneticUtils.formatChromossome(bestChromossome));
 
-        // plot 'generation vs average f(x,y) value' chart
+        // plot 'generation vs average fitness' chart
         PlotUtils.show();
     }
 }

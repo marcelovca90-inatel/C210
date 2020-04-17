@@ -37,4 +37,9 @@ public class Problem
     {
         return pop.stream().collect(Collectors.averagingDouble(c -> f(c)));
     }
+
+    public static double g_average(List<Chromossome> pop)
+    {
+        return pop.stream().collect(Collectors.averagingDouble(c -> g(c)));
+    }
 }

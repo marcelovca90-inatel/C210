@@ -11,7 +11,7 @@ if __name__ == "__main__":
         population.append(Chromossome())
 
     generation = 0
-    population_score = Problem.f_average(population)
+    population_score = Problem.g_average(population)
 
     generation_plot = []
     generation_plot.append(generation)
@@ -27,7 +27,7 @@ if __name__ == "__main__":
         GeneticOperators.elitism(population)
 
         generation += 1
-        population_score = Problem.f_average(population)
+        population_score = Problem.g_average(population)
 
         generation_plot.append(generation)
         population_score_plot.append(population_score)
@@ -38,7 +38,7 @@ if __name__ == "__main__":
     print(f"Best individual: {GeneticUtils.format_chromossome(best_chromossome)}")
 
     plt.gca().set_xlabel('Generation')
-    plt.gca().set_ylabel('Average f(x,y) value')
-    plt.gca().set_title('Generation vs Average f(x,y) value')
+    plt.gca().set_ylabel('Average fitness')
+    plt.gca().set_title('Average fitness per generation')
     plt.plot(generation_plot, population_score_plot)
     plt.show()

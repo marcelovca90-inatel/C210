@@ -26,15 +26,16 @@ public class PlotUtils
 
         // set up
         XYChart chart = QuickChart.getChart(
-            "Generation vs Number of Attacking Pairs",
+            "Average fitness per generation",
             "Generation",
-            "Number of Attacking Pairs",
-            "Number of Attacking Pairs (Generation)",
+            "Average fitness",
+            "Average fitness per generation",
             dataX.stream().mapToDouble(Double::doubleValue).toArray(),
             dataY.stream().mapToDouble(Double::doubleValue).toArray());
 
         // display
         plot = new SwingWrapper<>(chart).displayChart();
+        plot.setTitle("Execution visualization");
 
         return plot;
     }
