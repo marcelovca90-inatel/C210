@@ -1,4 +1,4 @@
-package br.inatel.c210.ga.plot;
+package br.inatel.c210.ga.view;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +20,7 @@ public class PlotUtils
         dataY.add(y);
     }
 
-    public static JFrame plot()
+    public static JFrame show()
     {
         JFrame plot = null;
 
