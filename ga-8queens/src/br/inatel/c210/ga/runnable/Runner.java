@@ -51,7 +51,7 @@ public class Runner
             // print the average score for the current generation
             System.err.println(String.format("Generation # %d -> Average population score = %.3f", generation, populationScore));
 
-        } while (generation < 100);
+        } while (generation < 50);
 
         // find the best individual after running the genetic algorithm
         Chromossome bestChromossome = GeneticUtils.findBestChromossome(population);

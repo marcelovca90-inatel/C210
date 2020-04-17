@@ -26,10 +26,10 @@ public class PlotUtils
 
         // set up
         XYChart chart = QuickChart.getChart(
-            "Generation vs # of Attacking Pairs",
+            "Generation vs Number of Attacking Pairs",
             "Generation",
-            "# of Attacking Pairs",
-            "# of Attacking Pairs (Generation)",
+            "Number of Attacking Pairs",
+            "Number of Attacking Pairs (Generation)",
             dataX.stream().mapToDouble(Double::doubleValue).toArray(),
             dataY.stream().mapToDouble(Double::doubleValue).toArray());
 

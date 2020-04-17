@@ -9,7 +9,7 @@ Code output:
 ![code_output](https://github.com/marcelovca90-inatel/C210/raw/master/ga-8queens/res/code_output.png)
 
 ```
-Best individual: [4, 6, 3, 0, 2, 7, 5, 1], Score = 0,000
+Best individual: [2, 6, 1, 7, 4, 0, 3, 5], Score = 0,000
 ```
 
 Solution visualization:
