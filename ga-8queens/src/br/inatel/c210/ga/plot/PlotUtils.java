@@ -26,10 +26,10 @@ public class PlotUtils
 
         // set up
         XYChart chart = QuickChart.getChart(
-            "Generation vs Average f(x,y) value",
+            "Generation vs # of Attacking Pairs",
             "Generation",
-            "Average f(x,y) value",
-            "Average f(x,y) value (Generation)",
+            "# of Attacking Pairs",
+            "# of Attacking Pairs (Generation)",
             dataX.stream().mapToDouble(Double::doubleValue).toArray(),
             dataY.stream().mapToDouble(Double::doubleValue).toArray());
 
