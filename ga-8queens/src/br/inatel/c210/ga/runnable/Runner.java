@@ -7,6 +7,7 @@ import br.inatel.c210.ga.algorithm.GeneticOperators;
 import br.inatel.c210.ga.algorithm.GeneticUtils;
 import br.inatel.c210.ga.entity.Chromossome;
 import br.inatel.c210.ga.entity.Problem;
+import br.inatel.c210.ga.plot.GridUtils;
 import br.inatel.c210.ga.plot.PlotUtils;
 
 public class Runner
@@ -57,7 +58,8 @@ public class Runner
         Chromossome bestChromossome = GeneticUtils.findBestChromossome(population);
         System.out.println("Best individual: " + GeneticUtils.formatChromossome(bestChromossome));
 
-        // plot 'generations vs average fitness' chart
-        PlotUtils.plot();
+        // plot 'generation vs number of attacking pairs' chart
+        PlotUtils.show();
+        GridUtils.show(bestChromossome);
     }
 }

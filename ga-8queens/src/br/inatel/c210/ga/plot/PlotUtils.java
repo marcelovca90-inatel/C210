@@ -20,7 +20,7 @@ public class PlotUtils
         dataY.add(y);
     }
 
-    public static JFrame plot()
+    public static JFrame show()
     {
         JFrame plot = null;
 
