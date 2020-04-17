@@ -1,6 +1,6 @@
 # Genetic Algorithm (Java)
 
-This algorithm attempts solve the [Eight queens puzzle](https://en.wikipedia.org/wiki/Eight_queens_puzzle):
+This algorithm attempts to solve the [Eight queens puzzle](https://en.wikipedia.org/wiki/Eight_queens_puzzle):
 
 > The eight queens puzzle is the problem of placing eight chess queens on an 8×8 chessboard so that no two queens threaten each other; thus, a solution requires that no two queens share the same row, column, or diagonal.
 
