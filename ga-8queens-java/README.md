@@ -1,4 +1,5 @@
-# Genetic Algorithm (Java)
+# Genetic Algorithms (GA)
+## Solving the 8 Queens Puzzle using Java
 
 This algorithm attempts to solve the [Eight queens puzzle](https://en.wikipedia.org/wiki/Eight_queens_puzzle):
 
@@ -6,7 +7,7 @@ This algorithm attempts to solve the [Eight queens puzzle](https://en.wikipedia.
 
 Code output:
 
-![code_output](https://github.com/marcelovca90-inatel/C210/raw/master/ga-8queens/res/code_output.png)
+![code_output](https://github.com/marcelovca90-inatel/C210/raw/master/ga-8queens-java/res/code_output.png)
 
 ```
 Best individual: [3, 6, 4, 1, 5, 0, 2, 7], Score = 28,000
@@ -14,6 +15,6 @@ Best individual: [3, 6, 4, 1, 5, 0, 2, 7], Score = 28,000
 
 Solution visualization:
 
-![solution_visualization](https://github.com/marcelovca90-inatel/C210/raw/master/ga-8queens/res/solution_visualization.png)
+![solution_visualization](https://github.com/marcelovca90-inatel/C210/raw/master/ga-8queens-java/res/solution_visualization.png)
 
 Check out this [online solution checker](http://eightqueen.becher-sundstroem.de/) by Becher-Sundström.
