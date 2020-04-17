@@ -58,7 +58,7 @@ public class Runner
         Chromossome bestChromossome = GeneticUtils.findBestChromossome(population);
         System.out.println("Best individual: " + GeneticUtils.formatChromossome(bestChromossome));
 
-        // plot 'generation vs number of attacking pairs' chart
+        // plot 'generation vs number of non-attacking pairs' chart
         PlotUtils.show();
         GridUtils.show(bestChromossome);
     }

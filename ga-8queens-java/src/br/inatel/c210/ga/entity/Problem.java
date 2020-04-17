@@ -19,7 +19,7 @@ public class Problem
                 double x2 = q2, y2 = genes[q2];
                 double m = (y2 - y1) / (x2 - x1);
                 double deg = Math.toDegrees(Math.atan(m));
-                if ((Double.compare(Math.abs(deg), 0.0) == 0) || // horizontal
+                if ((Double.compare(deg, 0.0) == 0) || // horizontal
                         (Double.compare(Math.abs(deg), 45.0) == 0)) // diagonal
                     attacks++;
             }
