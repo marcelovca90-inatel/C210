@@ -15,7 +15,7 @@ class Problem:
 
     @staticmethod
     def g(x, y):
-        return 1 / Problem.f(x, y)
+        return 1 / (1 + Problem.f(x, y))
 
     @staticmethod
     def g_chromossome(chromossome):
@@ -34,6 +34,6 @@ class Problem:
     def g_average(population):
         avg = 0
         for chromossome in population:
-            avg += g_chromossome(chromossome)
+            avg += Problem.g_chromossome(chromossome)
         avg /= len(population)
         return avg
