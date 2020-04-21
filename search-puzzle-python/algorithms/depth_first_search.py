@@ -74,4 +74,4 @@ class DepthFirstSearch(object):
                         # if not, add to the stack for evaluation
                         frontier.put(state)
 
-        return solution_found,visited_states
+        return solution_found,visited_states,visit_count

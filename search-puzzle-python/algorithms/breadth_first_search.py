@@ -74,4 +74,4 @@ class BreadthFirstSearch(object):
                         # if not, add to the queue for evaluation
                         frontier.put(state)
 
-        return solution_found,visited_states
+        return solution_found,visited_states,visit_count
