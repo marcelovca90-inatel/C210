@@ -1,12 +1,7 @@
 from .particle import Particle
-from matplotlib import pyplot as plt
+from .plot_utils import PlotUtils
 
 class PSO:
-
-    def update_plot(self,bounds,x,y):
-        plt.xlim(bounds[0])
-        plt.ylim(bounds[1])
-        plt.scatter(x,y)
 
     def __init__(self,num_dimensions,cost_function,bounds,num_particles,max_iterations):
 
@@ -35,9 +30,12 @@ class PSO:
             for j in range(0,num_particles):
                 swarm[j].update_velocity(gbest_pos)
                 swarm[j].update_position(bounds)
-                self.update_plot(bounds,swarm[j].position[0],swarm[j].position[1])
-            plt.show()
+                PlotUtils.plot_particle(swarm[j])    # plot the current particle
+            PlotUtils.plot_iteration(bounds,i)       # plot the current iteration
             i += 1
+
+        PlotUtils.save()    # persist the animated plot to the filesystem
+        PlotUtils.play()    # call a process to play the persisted animation
 
         # print final results
         print(f'i = {i}\tgbest_pos = {gbest_pos}\tgbest_err = {gbest_err}')
