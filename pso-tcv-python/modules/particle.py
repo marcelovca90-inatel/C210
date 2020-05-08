@@ -2,7 +2,7 @@ import random
 
 class Particle:
 
-    def __init__(self,x0,num_dimensions):
+    def __init__(self,num_dimensions,bounds):
         
         self.num_dimensions = num_dimensions
         self.position = []    # particle position
@@ -13,8 +13,8 @@ class Particle:
 
         # randomly initialize the positions and velocities
         for i in range(0,self.num_dimensions):
-            self.velocity.append(random.uniform(-1,+1))
-            self.position.append(random.uniform(-.1,+.1))
+            self.velocity.append(random.uniform(bounds[i][0],bounds[i][1]))
+            self.position.append(random.uniform(bounds[i][0]/10,bounds[i][1]/10))
 
     # evaluate current fitness
     def evaluate(self,cost_function):
