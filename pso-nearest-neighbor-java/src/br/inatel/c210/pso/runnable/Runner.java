@@ -14,6 +14,7 @@ public class Runner
         List<Particle> population = PSOUtils.createInitialPopulation();
 
         PlotUtils.show(population);
+        Thread.sleep(1000);
 
         while (true)
         {

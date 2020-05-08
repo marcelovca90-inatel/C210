@@ -24,6 +24,10 @@ public class PlotUtils
         chart.getStyler().setChartTitleVisible(false);
         chart.getStyler().setLegendPosition(LegendPosition.InsideSW);
         chart.getStyler().setMarkerSize(16);
+        // chart.getStyler().setXAxisMin(-1000.0);
+        // chart.getStyler().setXAxisMax(+1000.0);
+        // chart.getStyler().setYAxisMin(-1000.0);
+        // chart.getStyler().setYAxisMax(+1000.0);
 
         chart.addSeries(
             SERIES_NAME,

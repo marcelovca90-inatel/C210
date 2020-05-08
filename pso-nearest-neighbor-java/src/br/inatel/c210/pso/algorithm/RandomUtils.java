@@ -17,6 +17,14 @@ public class RandomUtils
         return RANDOM.nextDouble();
     }
 
+    public static double[] zeroDoubles(int n)
+    {
+        double[] values = new double[n];
+        for (int i = 0; i < n; i++)
+            values[i] = 0.0;
+        return values;
+    }
+
     public static double[] randomDoubles(int n)
     {
         double[] values = new double[n];
