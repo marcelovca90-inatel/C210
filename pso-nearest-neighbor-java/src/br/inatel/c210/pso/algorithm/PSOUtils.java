@@ -12,7 +12,7 @@ public class PSOUtils
     public static final int POPULATION_SIZE = 100;
     public static final double CRAZINESS_PROBABILITY = 0.10;
 
-    public static List<Particle> createInitialPopulation()
+    public static List<Particle> createInitialSwarm()
     {
         List<Particle> population = new ArrayList<>();
         for (int i = 0; i < POPULATION_SIZE; i++)

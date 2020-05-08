@@ -13,8 +13,8 @@ public class Particle
     public Particle()
     {
         this.id = RandomUtils.randomId();
-        this.position = new Vector(RandomUtils.zeroDoubles(NUM_DIMENSIONS));
-        this.velocity = new Vector(RandomUtils.randomDoubles(NUM_DIMENSIONS));
+        this.position = new Vector(RandomUtils.randomSignedDoubles(NUM_DIMENSIONS));
+        this.velocity = new Vector(RandomUtils.randomSignedDoubles(NUM_DIMENSIONS));
     }
 
     public Vector getPosition()

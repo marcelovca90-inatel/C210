@@ -10,7 +10,7 @@ import java.util.Map;
 import br.inatel.c210.pso.entity.Particle;
 import br.inatel.c210.pso.entity.Vector;
 
-public abstract class PSO
+public abstract class PSOOperators
 {
     public static void adjustVelocity(List<Particle> population)
     {
@@ -35,11 +35,8 @@ public abstract class PSO
         {
             if (RandomUtils.randomDouble() < CRAZINESS_PROBABILITY)
             {
-                for (int i = 0; i < NUM_DIMENSIONS; i++)
-                {
-                    double newVelocity = RandomUtils.randomSignedDouble();
-                    particle.setVelocityAt(i, newVelocity);
-                }
+                Vector newVelocity = new Vector(RandomUtils.randomSignedDoubles(NUM_DIMENSIONS));
+                particle.setVelocity(newVelocity);
             }
         }
     }
@@ -50,8 +47,7 @@ public abstract class PSO
         {
             for (int i = 0; i < NUM_DIMENSIONS; i++)
             {
-                double oldPosition = particle.getPositionAt(i);
-                double newPosition = oldPosition + particle.getVelocityAt(i);
+                double newPosition = particle.getPositionAt(i) + particle.getVelocityAt(i);
                 particle.setPositionAt(i, newPosition);
             }
         }
