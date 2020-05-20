@@ -1,7 +1,11 @@
 # Particle Swarm Optimization (PSO)
 ## Nearest Neighbor Velocity Matching implementation in Java
 
-![output](https://github.com/marcelovca90-inatel/C210/raw/master/pso-nearest-neighbor-python/output.png)
+![output_1](https://github.com/marcelovca90-inatel/C210/raw/master/pso-nearest-neighbor-java/output_1.png)
+
+![output_2](https://github.com/marcelovca90-inatel/C210/raw/master/pso-nearest-neighbor-java/output_2.png)
+
+![output_3](https://github.com/marcelovca90-inatel/C210/raw/master/pso-nearest-neighbor-java/output_3.png)
 
 References:
 
