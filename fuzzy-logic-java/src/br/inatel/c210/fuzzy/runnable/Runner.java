@@ -23,15 +23,16 @@ public class Runner
         fis.chart();
 
         // Now we use the FIS. We start by setting FIS' inputs
-        fis.setVariable("service", 3);
         fis.setVariable("food", 7);
+        fis.setVariable("service", 3);
 
         // And we run the system
         fis.evaluate();
 
         // If we want to know the system's output
         // (in this case there's only one output variable 'tip')
-        fis.getVariable("tip").getLatestDefuzzifiedValue();
+        double tip = fis.getVariable("tip").getLatestDefuzzifiedValue();
+        System.out.println("tip = " + tip);
 
         // We can also plot output's defuzzifier (probably only during debuging)
         fis.getVariable("tip").chartDefuzzifier(true);
